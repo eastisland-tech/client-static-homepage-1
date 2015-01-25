@@ -1,0 +1,416 @@
+/******************************************************************
+Base Typography
+******************************************************************/
+body, p, h1, h2, h3, h4, h5, h6, a{
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    color: #58595b;
+}
+h1{
+    font-size: 60px;
+    color: #231f20;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 22px;
+}
+p{
+    font-size: 14px;
+    color: #58595b;
+    line-height: 20px;
+}
+a{
+    font-size: 14px;
+    color: #231f20;
+}
+body a:hover, body nav a:hover{
+    color: #ff724e;
+    text-decoration: none;
+}
+button:hover, button[type='submit']:hover{
+    background-color: #ff724e;
+    color: #fff;
+}
+.block-btn{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 0;
+    height: 66px;
+    background-color: #414042;
+    border: 0;
+    display: block;
+    padding: 0 15px;
+}
+/******************************************************************
+Base Forms
+******************************************************************/
+input[type='text'], input[type='password'], input[type='email'], textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px!important;
+    font-weight: normal;
+    color: #babcbe;
+}
+
+input[type='submit'], form button[type='submit']{
+    width: 100%;
+    background-color: #56565a;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0;
+    height: 43px;
+}
+
+/******************************************************************
+Layout
+******************************************************************/
+.centered{
+    margin: 0 auto;
+    float: none;
+}
+
+
+/******************************************************************
+Top Bar/Nav
+******************************************************************/
+.navbar-static-top{
+    border-bottom: none;
+}
+.top-nav{
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.top-nav div > ul{
+    float: right;
+    padding: 0 65px;
+    margin: 0;
+}
+.top-nav div > ul > li{
+    list-style: none;
+    float:left;
+    margin-left: 25px;
+    position: relative;
+    height: 100%;
+}
+.top-nav div > ul > li:first-child{
+    margin-left: 0;
+}
+.top-nav div > ul > li:hover > ul{
+    display: block;
+}
+.top-nav li a{
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+}
+.top-nav .container > ul li ul{
+    display: none;
+    position: absolute;
+    top: 20px;
+    overflow: hidden;
+    padding: 13px 0 0 0;
+    white-space: nowrap;
+}
+.top-nav .container > ul li ul li{
+    list-style: none;
+    background-color: #f8f8f8;
+    padding: 8px 13px;
+    border-bottom: 1px solid #fff;
+}
+.top-nav .container > ul li ul li:last-child{
+    border-bottom: none;
+}
+.main-header{
+    padding-top: 40px;
+    padding-bottom: 23px;
+    background-color: #fff;
+}
+.main-nav{
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+.main-nav li{
+    float:left;
+    list-style: none;
+    margin-left: 55px;
+    padding-top: 21px;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li:last-child{
+    padding-top: 0;
+}
+.main-nav a{
+    color: #414042;
+    font-size: 24px;
+    font-weight: bold;
+}
+.mobile-quote{
+    display: none;
+    width: 100%;
+}
+.mobile-quote button{
+    width: 100%;
+}
+/******************************************************************
+Feature Area
+******************************************************************/
+.content section.feature-section{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    min-height: 685px;
+    background-color: #dbf0eb;
+}
+.feature-content{
+    max-width: 1224px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.feature-image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 45px;
+    min-width: 400px;
+}
+.feature-section h1{
+    margin-bottom: 70px;
+}
+.feature-section a{
+    text-indent: -9999px;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    display: block;
+    background: url('../images/down-arrow.png') no-repeat 0 0;
+}
+.feature-section a:hover{
+    background-image: url('../images/down-arrow-active.png');
+}
+/******************************************************************
+Sections - Content
+******************************************************************/
+.content{
+    text-align: center;
+}
+.content section, .footer{
+    padding: 70px 0;
+    background-color: #9dcbc6;
+}
+.content section img{
+    max-width: 100%;
+}
+.content h2, .footer h2{
+    margin: 25px 0 35px 0;
+}
+.content h3{
+    margin-bottom: 25px;
+}
+.content button{
+    margin: 0 auto 35px auto;
+}
+.content .faq, .content .one-stop-shop, .content .the-benefits{
+    background-color: #f0f1f1;
+}
+.faq .row{
+    padding-bottom: 70px;
+}
+.faq .row:last-child{
+    padding-bottom: 0;
+}
+.content .the-benefits{
+    padding: 115px 0 125px 0;
+}
+/******************************************************************
+Logo Slider
+******************************************************************/
+.logos{
+    padding: 48px 25px;
+    width: 70%;
+    position: relative;
+}
+.logo-slider{
+    width: 100%;
+    padding: 0 35px 0 60px;
+    overflow: hidden;
+    float:left;
+    height: 46px;
+    margin: 0;
+}
+.logo-slider li{
+    list-style: none;
+    margin-right: 25px;
+    float:left;
+}
+.slider-control{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 55px;
+    display: block;
+    text-indent: -9999px;
+}
+.slider-control-left{
+    left: 0;
+    background: url('../images/slider_arrow_left.png') no-repeat 0 0;
+}
+.slider-control-left:hover{
+    background-image: url('../images/slider_arrow_left_active.png');
+}
+.slider-control-right{
+    right: 0;
+    background: url('../images/slider_arrow_right.png') no-repeat 0 0;
+}
+.slider-control-right:hover{
+    right: 0;
+    background: url('../images/slider_arrow_right_active.png') no-repeat 0 0;
+}
+/******************************************************************
+Footer
+******************************************************************/
+.footer{
+    text-align: center;
+    padding-top: 40px;
+}
+.footer .contact-form{
+    max-width: 265px;
+    margin: 0 auto;
+}
+.footer .contact-form{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.footer p, .footer p a{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+/******************************************************************
+Media Queries
+******************************************************************/
+
+@media(max-width:1200px){
+    .main-nav a{
+        font-size: 18px;
+    }
+    .main-nav{
+        float:right;
+    }
+    .main-nav li{
+        margin-left: 25px;
+    }
+    .main-nav li:last-child{
+        padding-top: 13px;
+    }
+    .block-btn{
+        height: 40px;
+        font-size: 18px;
+    }
+    .logos{
+        width: 95%;
+    }
+}
+
+
+@media(max-width:992px){
+    .logo img{
+        width: 200px;
+    }
+}
+
+@media(max-width:767px){
+    .feature-section{
+        min-height: 300px!important;
+    }
+    .feature-section h1{
+        font-size: 40px;
+    }
+    .main-nav a, .main-nav button{
+        font-size: 14px;
+    }
+    .logo{
+        display:block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .main-nav{
+        float: none;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 350px;
+    }
+    .faq .row{
+        padding-bottom: 0;
+    }
+    .faq .row > div{
+        padding-bottom: 40px;
+    }
+    .logo-slider{
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media(max-width:481px){
+    .main-header{
+        padding-bottom: 0;
+    }
+    .main-nav{
+        width: 210px;
+    }
+    .main-nav li{
+        width: 33%;
+        margin: 0;
+        text-align: center;
+    }
+    .main-nav li a{
+        font-size: 13px;
+    }
+    .main-nav li:last-child{
+        display: none;
+    }
+    .main-nav li:last-child{
+        margin-left: 0;
+    }
+    .main-nav .block-btn{
+        width: 100%;
+    }
+    .mobile-quote{
+        display: block;
+    }
+    .content section.feature-section{
+        padding-top: 15px;
+    }
+    .content section.feature-section h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .content h2, .footer h2{
+        font-size: 22px;
+    }
+    .content h3, .footer h3{
+        font-size: 16px;
+    }
+    .content section{
+        padding-top: 25px;
+    }
+    .top-nav div > ul{
+        padding: 0;
+        float: none;
+        margin: 0 auto;
+        width: 180px;
+    }
+}
